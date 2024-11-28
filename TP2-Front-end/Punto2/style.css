@@ -1,0 +1,89 @@
+/*ESTILOS PARA CAMPO EMAIL*/
+.email{
+    display: flex;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+#email{
+    width: 540px;
+}
+/*ESTILOS PARA CAMPO NOMBRE Y APELLIDO*/
+#name{
+    width: 200px;
+}
+div{
+display: flex;
+display: inline-block;
+padding-right: 10px;
+}
+h3{
+    margin-bottom: 0;
+}
+/*ESTILO PARA LISTA DE MATERIAS*/
+ul{
+    list-style-type: decimal;
+}
+/*SECCIÓN DATOS PERSOANLES*/
+.datos{
+    margin-bottom: 20px;
+}
+/*CAMPOS DE MATERIAS*/
+.materia{
+    margin-bottom: 15px;
+}
+/*CAMPOS DE NOTAS*/
+.notas{
+    width: 50px;
+    margin-bottom: 15px;
+}
+/*CONTENEDOR DE MATERIAS Y NOTAS*/
+.container-materias-notas{
+    margin-left: 130px;
+    display: flex;
+}
+/*ESTILOS PARA BOTONES*/
+.button-prom{
+    margin-left: 320px;
+    margin-bottom: 15px;
+}
+.button-enviar{
+    margin-left: 30px;
+   
+}
+.botones{
+    display: flex;
+}
+
+/*BOTONES DE PROMEDIO Y ENVIAR*/
+
+.button-prom button,
+.button-enviar button {
+    background-color: black; 
+    border: none; 
+    color: white; 
+    font-size: 16px;
+    cursor: pointer; 
+    border-radius: 4px; 
+}
+
+.button-prom button:hover,
+.button-enviar button:hover { 
+    background-color: #806dec;
+}
+
+/*BORDE DE FORMULARIO*/
+.border-form{ 
+    border-style: ridge;
+    border-color: black;
+    width: 700px;
+    margin: auto;
+    background-color: rgb(247, 229, 204);
+}
+/*CONTENIDO DE FORMULARIO*/
+.contenido-form{ 
+    text-align: center;
+}
+.container-materias-notas{
+    margin-left: 130px;
+    display: flex;
+}

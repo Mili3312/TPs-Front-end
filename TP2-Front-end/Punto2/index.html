@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <main>
+<form method="post" class="border-form" id="alumno-form" onsubmit="return validarFormulario()">
+    <!--CONTENIDO DEL FORMULARIO-->
+<section class="contenido-form">
+    <!--DATOS PERSONALES-->
+    <section class="datos">
+        <!--CAMPO PARA INGRESAR NOMBRE-->
+    <div>
+    <h3>Nombre</h3>
+    <input type="text" name="name" id="name" required>
+    </div>
+    <!--CAMPO PARA INGRESAR APELLIDO-->
+    <div>
+    <h3>Apellido</h3>
+    <input type="text" name="lastname" id="lastname" required>
+    </div>
+    <!--CAMPO PARA INGRESAR LEGAJO-->
+    <div>
+    <h3>Legajo</h3>
+    <input type="text" name="file" id="file" required>    
+    </div>
+    </section>
+    <!--CAMPO PARA INGRESAR EMAIL-->
+    <section class="email">
+    <label for="email"><strong>Email</strong></label>
+    <input type="email" name="email" id="email" required>
+    </section>
+    <!--CONTENEDOR DE MATERIAS Y NOTAS-->
+<div class="container-materias-notas">
+    <!--SECCIÓN DE MATERIAS-->
+    <div class="materias">
+        <h3>Materias</h3>
+        <ul> 
+            <li><input type="text" name="materia-1" id="materia-1" class="materia" required></li>
+            <li><input type="text" name="materia-2" id="materia-2" class="materia" required></li>
+            <li><input type="text" name="materia-3" id="materia-3" class="materia" required></li>
+            <li><input type="text" name="materia-4" id="materia-4" class="materia" required></li>
+            <li><input type="text" name="materia-5" id="materia-5" class="materia" required></li>
+        </ul>
+    </div>
+    <!--SECCIÓN DE NOTAS-->
+    <div>
+        <h3>Notas</h3>
+        <ul>
+            <li><input type="number" name="nota1" id="nota1" class="notas" required></li>
+            <li><input type="number" name="nota2" id="nota2" class="notas" required></li>
+            <li><input type="number" name="nota3" id="nota3" class="notas" required></li>
+            <li><input type="number" name="nota4" id="nota4" class="notas" required></li>
+            <li><input type="number" name="nota5" id="nota5" class="notas" required></li>
+        </ul>
+    </div>
+</div>
+<!--BOTONES-->
+<div class="botones">
+    <!--BOTÓN DE PROMEDIO-->
+<section class="button-prom">
+<button type="button" onclick="calcularPromedio()">Promediar</button>
+<span id="resultado-promedio"></span>
+</section>
+ <!--BOTÓN ENVIAR-->
+<section class="button-enviar">
+    <button type="submit">Enviar</button>
+</section>
+</div>
+</section>
+</form>
+</main>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+

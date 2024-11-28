@@ -1,0 +1,240 @@
+nav {
+    background-color: rgb(222, 201, 243);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: blueviolet;
+}
+
+nav ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 80%;
+    background-color: #ccc;
+}
+
+body {
+    background-color: rgb(248, 243, 249);
+}
+
+.tabla-2 {
+    width: 35%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: -515px auto 20px;
+    margin-left: 380px;
+    background-color: lemonchiffon;
+}
+
+th, td {
+    padding: 2px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.cursada {
+    color: #77dd77;
+}
+
+.pendiente {
+    color: rgb(229, 89, 89);
+}
+
+.cursando {
+    color: rgb(124, 124, 234);
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    margin-right: 30px;
+    margin-left: -95px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.container h1 {
+    margin-top: 10px;
+}
+
+.foto-circular {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.enmarcado-1 {
+    border: 2px solid #333;
+    padding: 20px;
+    background-color: lemonchiffon;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 125px;
+    margin-top: 40px;
+    flex: 1;
+}
+
+#redes ul,
+.enmarcado ul {
+    list-style: none;
+    padding: 0;
+}
+#redes ul li{
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+#redes ul li a,
+.enmarcado ul li a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#redes ul li a:hover,
+.enmarcado ul li a:hover {
+    color: rgb(182, 58, 224);
+}
+
+.enmarcado {
+    width: 300px;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    margin: 0 auto;
+    margin-left: -5px;
+    background-color: lemonchiffon;
+}
+.enmarcado ul li {
+    margin-bottom: 10px; 
+}
+.enmarcado h2 {
+    text-align: left;
+}
+
+.companeros-container {
+    display: flex;
+}
+
+.companeros-list {
+    margin-right: 20px;
+}
+
+.enmarcado-2 {
+    width: 300px;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 0 auto;
+    margin-left: -5px;
+    background-color: lemonchiffon;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#aspiraciones-profesionales {
+    margin: -515px auto 20px;
+    float: right;
+}
+
+.unsta:hover {
+    color: rgb(182, 58, 224);
+}
+
+.unsta {
+    color: #333;
+    text-decoration: none;
+}
+
+h2 {
+    color: rgb(109, 39, 179);
+}
+
+section:target {
+    background-color: rgb(195, 121, 244);
+    padding: 10px;
+}
+
+nav ul li a:active {
+    color: rgb(219, 44, 250);
+}
+
+footer {
+    background-color: rgb(212, 186, 238);
+    text-align: center;
+}
+
+footer p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    position: relative;
+}
+
+footer p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: black;
+}
+
+footer p:last-child {
+    position: relative;
+}
+
+footer p:last-child::before {
+    content: "\2022";
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+}
